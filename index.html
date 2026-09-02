@@ -1,20 +1,4 @@
-<!-- Game Page -->
-<div id="game-page" style="display: none;">
-  <!-- Your existing game HTML goes here -->
-</div>
-  <div id="date-display"></div>
-  <div id="mistakes-display">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-  <div id="grid"></div>
-  <div id="solved-container"></div>
-  <button id="deselect-btn">Deselect All</button>
-  <button id="shuffle-btn">Shuffle</button>
-  <button id="submit-btn">Submit</button>
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hy">
 <head>
   <meta charset="UTF-8">
@@ -24,25 +8,37 @@
 </head>
 <body>
 
-  <h1>Կապեր</h1>
-  <div id="date-display"></div>
-  <p id="subtitle">Ստեղծէ 4 բառերէ բաղկացած 4 խումբեր (Create 4 groups of 4 words)</p>
-
-  <div id="solved-container"></div>
-  <div id="grid"></div>
-
-  <div id="mistakes-container">
-    Սխալներ (Mistakes remaining): 
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+  <!-- Landing Page -->
+  <div id="landing-page">
+    <div class="landing-container">
+      <h1>Կապեր</h1>
+      <p>Ստեղծէ 4 բառերէ բաղկացած 4 խումբեր</p>
+      <button id="start-btn">Խաղ Սկսել (Start Game)</button>
+    </div>
   </div>
 
-  <div class="controls">
-    <button id="shuffle-btn">Խառնել (Shuffle)</button>
-    <button id="deselect-btn">Չեղարկել (Deselect All)</button>
-    <button id="submit-btn" disabled>Ուղարկել (Submit)</button>
+  <!-- Game Page -->
+  <div id="game-page" style="display: none;">
+    <h1>Կապեր</h1>
+    <div id="date-display"></div>
+    <p id="subtitle">Ստեղծէ 4 բառերէ բաղկացած 4 խումբեր (Create 4 groups of 4 words)</p>
+
+    <div id="solved-container"></div>
+    <div id="grid"></div>
+
+    <div id="mistakes-container">
+      Սխալներ (Mistakes remaining): 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="controls">
+      <button id="shuffle-btn">Խառնել (Shuffle)</button>
+      <button id="deselect-btn">Չեղարկել (Deselect All)</button>
+      <button id="submit-btn" disabled>Ուղարկել (Submit)</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
