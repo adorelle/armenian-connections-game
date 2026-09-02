@@ -1,3 +1,7 @@
+document.getElementById('start-btn').addEventListener('click', () => {
+  document.getElementById('landing-page').style.display = 'none';
+  document.getElementById('game-page').style.display = 'block';
+});
 // 1. Display Today's Date in Western Armenian
 const today = new Date();
 const armenianDate = new Intl.DateTimeFormat('hy-AM', { 
