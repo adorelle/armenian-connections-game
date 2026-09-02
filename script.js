@@ -1,6 +1,13 @@
 // 1. Display Today's Date in Western Armenian
-const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-document.getElementById("date-display").innerText = new Date().toLocaleDateString('hy-AM', dateOptions);
+const today = new Date();
+const armenianDate = new Intl.DateTimeFormat('hy-AM', { 
+  weekday: 'long', 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+}).format(today);
+
+document.getElementById('date-display').textContent = armenianDate;
 
 // 2. Daily Puzzles Dictionary (Keyed by YYYY-MM-DD)
 const dailyPuzzles = {
